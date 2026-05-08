@@ -1,0 +1,37 @@
+# ==========================================
+# 1. N8N CORE SETTINGS
+# ==========================================
+N8N_PROTOCOL=https
+WEBHOOK_URL=https://kotra-bharat-chandra.onrender.com/
+N8N_EDITOR_BASE_URL=https://kotra-bharat-chandra.onrender.com/
+
+# Fixes the sign-in loop problem by allowing cookies on Render's domain
+N8N_SECURE_COOKIE=false
+
+# ==========================================
+# 2. SUPABASE DATABASE SETTINGS
+# ==========================================
+DB_TYPE=postgresdb
+DB_POSTGRESDB_HOST=db.uitugsshpshcxocsbaux.supabase.co
+DB_POSTGRESDB_PORT=5432
+DB_POSTGRESDB_DATABASE=postgres
+DB_POSTGRESDB_USER=postgres
+DB_POSTGRESDB_PAssword=asdfghjklzxcvbnm
+
+# This is critical for Supabase connections from Render
+DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED=false
+
+# ==========================================
+# 3. SECURITY & PERSISTENCE
+# ==========================================
+# Change 'a-very-secret-key' to a random long string. 
+# If this changes later, your saved credentials will break!
+N8N_ENCRYPTION_KEY=your-unique-random-string-123
+
+# ==========================================
+# 4. OPTIONAL BUT RECOMMENDED
+# ==========================================
+# Helps with memory management on Render's free/starter tiers
+N8N_METRICS=true
+EXECUTIONS_DATA_PRUNE=true
+EXECUTIONS_DATA_MAX_AGE=168
